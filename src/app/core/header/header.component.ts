@@ -10,6 +10,7 @@ export class HeaderComponent {
   @Output() sendString = new EventEmitter<string>();
 
   search(searchString: string) {
+    //Sends search string to app component
     this.sendString.emit(searchString);
   }
 }

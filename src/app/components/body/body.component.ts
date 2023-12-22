@@ -8,5 +8,6 @@ import Game from 'src/model/game';
 })
 export class BodyComponent {
   @Input() games: Game[] = []
+  //Recieves games from app components
 
 }

@@ -11,6 +11,7 @@ export class SearchBarComponent {
   searchString: string = '';
 
   onInputChange(event: Event) {
+    //Extracts text from input and sends it to header component
     this.searchString = (event.target as HTMLInputElement).value;
     this.sendString.emit(this.searchString);
   }

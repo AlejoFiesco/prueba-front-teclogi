@@ -15,10 +15,9 @@ export class AppComponent {
 
   constructor(private service: ApiServiceService) { }
   search(searchString: string) {
+    //Everytime search string changes, fetches data from API and saves it
     this.service.fetchAllGames(this.searchString).subscribe((data) => {
       this.games = data;
-      console.log(this.games);
-
     });
 
     this.searchString = searchString;

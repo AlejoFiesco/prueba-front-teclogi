@@ -1,0 +1,93 @@
+@import '../../../styles/styles.scss';
+
+header {
+  background-color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: $gray;
+  height: $header-height;
+  color: $header-highlight-color;
+
+  button {
+    display: flex;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+    margin: 2px;
+    border-radius: 5px;
+    transition: .2s;
+
+    span {
+      display: block;
+    }
+
+    &:hover {
+      background-color: $gray;
+    }
+  }
+
+  #banner {
+    position: relative;
+    top: -1px;
+    height: 120px;
+    background-color: $header-highlight-color;
+    border-radius: 0 0 20px 20px;
+    width: 200px;
+    display: grid;
+    place-content: center;
+
+    img {
+      object-fit: cover;
+      height: 100px;
+    }
+  }
+
+  .horizontal {
+    display: grid;
+    color: inherit;
+    margin: 0 15px;
+    width: 50%;
+    grid-template-columns: 60% 35%;
+    gap: 5%;
+    place-content: center;
+    align-items: center;
+
+    * {
+      box-sizing: border-box;
+    }
+  }
+
+  #account {
+    display: flex;
+    align-content: center;
+  }
+
+  @media screen and (max-width: $responsive-from) {
+    justify-content: center;
+
+    #banner {
+      max-width: 60px;
+      max-height: $header-height;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .horizontal {
+      margin-left: 10px;
+      grid-template-columns: 80% 20%;
+    }
+
+    .text {
+      display: none !important;
+    }
+  }
+}

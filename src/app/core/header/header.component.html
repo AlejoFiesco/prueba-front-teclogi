@@ -1,0 +1,22 @@
+<header>
+    <section id="banner">
+        <img src="/assets/img/pacman-logo.png" alt="logo">
+    </section>
+    <div class="horizontal">
+        <app-search-bar (sendString)="search($event)"></app-search-bar>
+        <button>
+          <span class="material-symbols-outlined">
+            shopping_cart
+          </span>
+          <span class="text">Resumen de compras</span>
+        </button>
+    </div>
+    <div id="account">
+        <button>
+          <span class="text">Eduardo</span>
+          <span class="material-symbols-outlined">
+            account_circle
+          </span>
+        </button>
+    </div>
+</header>

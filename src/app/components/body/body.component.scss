@@ -1,0 +1,29 @@
+@import '../../../styles/styles.scss';
+
+#body {
+  padding: 60px 10px;
+  font-family: inherit;
+
+  #cards-container {
+    padding: 15px 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    row-gap: 35px;
+
+    @media screen and (max-width: $responsive-from) {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  @media screen and (max-width: $responsive-from) {
+    padding: 10px;
+  }
+}

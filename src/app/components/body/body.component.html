@@ -1,0 +1,12 @@
+<section id="body">
+
+    <h2 *ngIf="!games ;else Games">Haga una búsqueda</h2>
+    <ng-template #Games>
+        <h2>Todos los juegos</h2>
+    </ng-template>
+    <div id="cards-container">
+        <div class="card" *ngFor="let item of games">
+            <app-game-card [game]="item"></app-game-card>
+        </div>
+    </div>
+</section>

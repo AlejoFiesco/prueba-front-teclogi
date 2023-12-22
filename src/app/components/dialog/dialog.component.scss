@@ -1,0 +1,23 @@
+@import 'src/styles/styles';
+
+.dialog {
+  width: 100%;
+
+  h1 {
+    text-align: center;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  .dialog-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: $responsive-from) {
+    width: 100%;
+  }
+}

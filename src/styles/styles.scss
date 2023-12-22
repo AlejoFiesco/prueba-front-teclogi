@@ -1,0 +1,9 @@
+@import './mixins';
+@import './variables';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $main-bg-color;
+}
